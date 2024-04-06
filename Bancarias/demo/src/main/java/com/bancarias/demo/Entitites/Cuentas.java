@@ -22,9 +22,9 @@ public class Cuentas {
     @Column(name = "numerocuenta")
     private String numeroCuenta;
 
-   // @ManyToOne
-    //@JoinColumn(name="dni",referencedColumnName = "dni")
-    //private Cliente cliente;
+   @ManyToOne
+    @JoinColumn(name="dni",referencedColumnName = "dni")
+    private Cliente cliente;
 
     private double saldo;
 
