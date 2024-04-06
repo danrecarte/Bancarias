@@ -19,11 +19,11 @@ public class Cliente {
     private String dni;
 
     @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name = "numeroCuenta", referencedColumnName = "numerocuenta")
+    //@JoinColumn(name = "numeroCuenta", referencedColumnName = "numerocuenta")
     private List<Cuentas> cuentas;
 
     @OneToMany
-    @JoinColumn(name = "iddireccion", referencedColumnName = "iddireccion")
+    //@JoinColumn(name = "iddireccion", referencedColumnName = "iddireccion")
     private List<Direccion> direcciones;
 
 
