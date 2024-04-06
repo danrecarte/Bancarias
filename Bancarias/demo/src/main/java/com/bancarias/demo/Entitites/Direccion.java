@@ -20,9 +20,9 @@ public class Direccion {
     @Column(name = "iddireccion")
     private int idDireccion;
 
-    //@OneToOne
-    //@JoinColumn(name = "dni",referencedColumnName = "dni")
-    //private Cliente cliente;
+    @OneToOne
+    @JoinColumn(name = "dni",referencedColumnName = "dni")
+    private Cliente cliente;
 
 
     private char estado;
