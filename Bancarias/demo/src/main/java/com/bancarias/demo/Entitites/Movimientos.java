@@ -22,9 +22,9 @@ public class Movimientos {
     @Column(name = "idmovimiento")
     private int idMovimiento;
 
-    //@ManyToOne
-    //@JoinColumn(name="numeroCuenta",referencedColumnName = "numeroCuenta")
-    //private Cuentas cuentas;
+    @ManyToOne
+    @JoinColumn(name="numeroCuenta",referencedColumnName = "numeroCuenta")
+    private Cuentas cuentas;
     @Column(name = "numerocuenta")
     private String numeroCuenta;
 
